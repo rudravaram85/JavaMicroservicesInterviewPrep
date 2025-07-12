@@ -2682,6 +2682,100 @@ docker rmi nginx
 
 ## 3. Introduction to Docker Extensions and LogsExplorer
 
+Here’s a well-organized version of the lecture content using **bullet points and sections** to clearly explain the **Docker Logs Explorer extension** and general extension usage:
+
+---
+
+## 🔌 Docker Extensions Overview
+
+* Docker Desktop supports the use of **extensions** to enhance functionality.
+* These extensions can help simplify tasks related to:
+
+  * Containers
+  * Images
+  * Logs
+  * Monitoring
+  * Networking
+* Thousands of extensions are available and can be added via the **“Add Extensions”** option in Docker Desktop.
+
+---
+
+## 🧭 When to Use Docker Extensions
+
+* Use extensions when:
+
+  * You're facing repetitive or time-consuming tasks.
+  * You need improved visibility or functionality (e.g., logs, metrics).
+  * You're troubleshooting containers, images, or Docker Desktop issues.
+* Always **search for available extensions** related to your problem — many are built specifically to solve common pain points.
+
+---
+
+## 🔍 Logs Explorer Extension
+
+### 📥 Installation Steps
+
+1. Go to **Docker Desktop > Add Extensions**.
+2. Search for **“Logs Explorer”**.
+3. Select the extension published by **Docker, Inc.**.
+4. Click **Install**.
+5. Once installed, it will appear under the **Extensions** menu.
+
+### 📊 Features & Benefits
+
+* View logs from **all running and stopped containers** in one place.
+* Avoid having to check logs container-by-container.
+* Each container’s logs are color-coded:
+
+  * **Blue**: Accounts microservice
+  * **Red**: Loans microservice
+  * **Green**: Cards microservice
+* Real-time log viewing when containers are running.
+
+### 🔧 Filtering Options
+
+* **Container selection**: Filter logs by container name (e.g., only loans microservice).
+* **Log status**:
+
+  * Show logs from **running** containers.
+  * Show logs from **stopped** containers.
+* **Search functionality**: Search logs using keywords.
+* **Log type filter**:
+
+  * Filter by **Standard Output**
+  * Filter by **Standard Error**
+
+---
+
+## ✅ Practical Example: Logs Explorer in Action
+
+1. Run your services using:
+
+   ```bash
+   docker compose up
+   ```
+2. Open **Docker Desktop > Logs Explorer**.
+3. See all logs from:
+
+   * Loans microservice
+   * Cards microservice
+   * Accounts microservice
+4. Use filters or search to find specific logs quickly.
+
+---
+
+## 💡 Final Recommendations
+
+* **Logs Explorer** is a highly recommended extension — install it to streamline your log viewing process.
+* For any recurring Docker challenges or inefficiencies:
+
+  * **Search for extensions** — someone may have already created a tool for it.
+* Extensions can **save time** and **boost productivity**, especially in development and troubleshooting.
+
+---
+
+Let me know if you’d like this formatted into a **slide deck**, **PDF**, or **cheat sheet**!
+
 ### Use Case
 
 Extend Docker Desktop functionality and analyze container logs visually for faster troubleshooting.
